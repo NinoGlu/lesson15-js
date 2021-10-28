@@ -84,3 +84,30 @@ for(let  i=0; i<10000; i++ ){
     numbersArray.push(i * i) 
 }
 console.log(numbersArray);
+
+// Task 6:
+let numberArray=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+let firstNum=0;
+let secondNum=0;
+for(let i=0; i< numberArray.length; i++){
+    if (numberArray[i]>firstNum ){
+        secondNum=firstNum;
+        firstNum=numberArray[i];
+    } else if ( numberArray[i]>secondNum){
+        secondNum=numberArray[i];
+    }
+}
+console.log(secondNum);
+
+let numArr=[2, 3, 6, 6, 5]
+let firstNumber=0;
+let secondNumber=0;
+for(let i=0; i< numArr.length; i++){
+    if (numArr[i]>firstNumber ){
+        secondNumber=firstNumber;
+        firstNumber=numArr[i];
+    } else if ( numArr[i]>secondNumber){
+        secondNumber=numArr[i];
+    }  
+}
+console.log(secondNumber);
